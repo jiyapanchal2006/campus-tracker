@@ -4,6 +4,8 @@ const API = axios.create({
   baseURL: 'https://your-backend.onrender.com/api' 
 });
 
+export default API;
+
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) config.headers.Authorization = `Bearer ${token}`;
