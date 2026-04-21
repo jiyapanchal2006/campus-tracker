@@ -55,4 +55,4 @@ export const eventAPI = {
   delete: (id) => API.delete(`/events/${id}`),
 };
 
-export default API;
+
